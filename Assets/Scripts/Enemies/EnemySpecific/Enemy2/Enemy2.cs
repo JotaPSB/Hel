@@ -57,7 +57,6 @@ public class Enemy2 : Entity
         {
             stateMachine.ChangeState(rangeAttackState);
         }
-
         else if (!CheckPlayerInMinAgroRange())
         {
             lookForPlayerState.SetTurnImmediately(true);

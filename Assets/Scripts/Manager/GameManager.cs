@@ -10,6 +10,8 @@ public class GameManager: MonoBehaviour
     private GameObject player;
     [SerializeField]
     private float respawnTime;
+ 
+    private PlayerStats healthBar;
 
     private float respawnTimeStart;
 
@@ -20,6 +22,7 @@ public class GameManager: MonoBehaviour
     private void Start()
     {
         CVC = GameObject.Find("Player Camera").GetComponent<CinemachineVirtualCamera>();
+        healthBar = player.transform.GetComponent<PlayerStats>();
     }
 
     private void Update()
@@ -38,6 +41,8 @@ public class GameManager: MonoBehaviour
         {
             var playerTemp =  Instantiate(player, respawnPoint);
             CVC.m_Follow = playerTemp.transform;
+
+            
             respawn = false;
         }
     }

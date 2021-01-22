@@ -34,7 +34,7 @@ public class E2_RangeAttackState : RangeAttackState
     public override void LogicUpdate()
     {
         base.LogicUpdate();
-        if (!isAnimationFinish)
+        if (isAnimationFinish)
         {
             if (isPlayerInMinAgroRange)
             {

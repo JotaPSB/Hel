@@ -277,8 +277,16 @@ MonoBehaviour:
   jumpForce: 5
   groundCheckRadius: 0.1
   wallCheckDistance: 0.15
-  wallSlideSpeed: 0.5
+  wallSlideSpeed: 1
   movementForceInAir: 10
+  wallHopForce: 5
+  wallJumpForce: 7
+  dashTime: 0.2
+  dashSpeed: 20
+  distanceBetweenImages: 0.1
+  dashCooldown: 2.5
+  wallHopDirection: {x: 1, y: 0.5}
+  wallJumpDirection: {x: 1, y: 2}
   knockbackSpeed: {x: 2.5, y: 1.25}
   amountOfJumps: 1
   whatIsGround:
@@ -298,10 +306,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2d90da0cb99b7478ab8846c1cfb167, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 50
+  maxHealth: 100
   deathChunkParticle: {fileID: 5218630139962195037, guid: ff8854b143d637b449d9c3d55b434619,
     type: 3}
   deathBloodParticle: {fileID: 7429600103577138432, guid: 7a95ba7f9ba92764b912af7ae9ed7f00,
+    type: 3}
+  healthBar: {fileID: 1320065368444344905, guid: 4cb42d6c02ada654388cd6c3b976422d,
     type: 3}
 --- !u!1 &7476845011650644010
 GameObject:
@@ -327,7 +337,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7476845011650644010}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.036, y: 0.033, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7476845011648670823}
@@ -357,7 +367,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7476845011852609121}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.326, y: -0.01, z: 0}
+  m_LocalPosition: {x: 0.262, y: -0.001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7476845011648670823}

@@ -33,10 +33,12 @@ public class PlayerDetectedState : State
     public override void LogicUpdate()
     {
         base.LogicUpdate();
-
-        if(Time.time >= startTime + stateData.longRangeActionTime)
+  
+        if (Time.time >= startTime + stateData.longRangeActionTime)
         {
+            
             performLongRangeAction = true;
+            
         }
     }
 

@@ -70,7 +70,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1675085787
-  m_SortingLayer: 2
+  m_SortingLayer: 1
   m_SortingOrder: 1
   m_Sprite: {fileID: -4526678515447236173, guid: a227753a066bf9c45be70fcd1e97dcd6,
     type: 3}
@@ -201,7 +201,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1675085787
-  m_SortingLayer: 2
+  m_SortingLayer: 1
   m_SortingOrder: 1
   m_Sprite: {fileID: 5608207290827647973, guid: a227753a066bf9c45be70fcd1e97dcd6,
     type: 3}
@@ -278,7 +278,7 @@ Transform:
   m_GameObject: {fileID: 8936866262895408856}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.51, y: -3.69, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children:
   - {fileID: 8936866263382927700}
   - {fileID: 8936866262641174001}
@@ -306,7 +306,8 @@ MonoBehaviour:
   knockbackDeathSpeedY: 1.25
   deathTorque: 0.5
   applyKnockback: 1
-  hitParticle: {fileID: 0}
+  hitParticle: {fileID: 5236994907362166164, guid: df88063180cb176439438482037b68f2,
+    type: 3}
 --- !u!1 &8936866263382927703
 GameObject:
   m_ObjectHideFlags: 0
@@ -378,7 +379,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1675085787
-  m_SortingLayer: 2
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 7959366390192544645, guid: a227753a066bf9c45be70fcd1e97dcd6,
     type: 3}
